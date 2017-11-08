@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Bilanzo - Einnahme & Ausgabe - App</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <h1>Bilanzo</h1>
+      <p>Einnahme & Ausgabe - Webapplikation</p>
+
+        <div class="list">
+          <div id="list_ul">
+            <ul>
+              <li>Gehalt</li>
+              <li>morefire</li>
+              <li>1500€</li>
+            </ul>
+
+            <ul>
+              <li>Sneaker</li>
+              <li>Schuhe</li>
+              <li>200€</li>
+            </ul>
+
+            <ul>
+              <li>Freddy Schilling</li>
+              <li>Essen</li>
+              <li>10€</li>
+            </ul>
+          </div>
+
+          <div class="formular">
+
+            <h1>Neuer Eintrag</h1>
+            <fieldset>
+              <div id="einnahme_ausgabe_entscheidung">
+                <label>Einnahme oder Ausgabe</label></br>
+                <input type="radio" id="auswahl_1" value="einnahme_form" name="user_einnahme_ausgabe"><label for="einnahme_form">Einnahme</label></br>
+                <input type="radio" id="auswahl_2" value="ausgabe_form" name="user_einnahme_ausgabe"><label for="ausgabe_form">Ausgabe</label></br></br>
+              </div>
+            </br>
+              <label for="kategorie">Kategorie:</label>
+              <select id="kategorie" name="user_kategorie">
+                <optgroup label="Bitte Auswählen">
+                  <option value="essen_trinken">Essen & Trinken</option>
+                  <option value="auto">Auto</option>
+                  <option value="gehalt">Gehalt</option>
+                  <option value="kleidung">Kleidung</option>
+                  <option value="sonstiges">Sonstiges</option>
+                </optgroup>
+              </select>
+
+              <label>Datum:</label>
+              <input type="date" name="datum" class="addDatumInput">
+
+              <label>Produkt:</label>
+              <input type="text" class="addProduktInput">
+
+
+
+              <label>Kategorie:</label>
+              <input type="text" class="addKategorieInput">
+
+              <label>Betrag:</label>
+              <input type="text" class="addBetragInput">
+
+              <button class="addInputButton">Absenden</button>
+            </fieldset>
+          </div>
+        </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
